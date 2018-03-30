@@ -32,7 +32,7 @@ export default class App extends Component {
   }
 
   getData = () => {
-    axios.get(`https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=${appid}&units=metric`)
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=${APPID}&units=metric`)
       .then(result => {
         console.log('result', result.data)
         this.setState({ fetching: false, data: result.data });
