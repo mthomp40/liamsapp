@@ -16,7 +16,6 @@ import {
   Dimensions
 } from 'react-native';
 import axios from 'axios';
-import LinearGradient from 'react-native-linear-gradient';
 import { YellowBox } from 'react-native';
 
 YellowBox.ignoreWarnings([
@@ -91,7 +90,6 @@ export default class App extends Component {
         description && description.replace(' ', '_');
       const iconUrl = underscoreDescription && iconUrls[underscoreDescription];
       const weatherIconSource = `http://openweathermap.org/img/w/${iconUrl}`;
-      console.log('url: ' + weatherIconSource);
       return (
         <View style={styles.container}>
           <View style={{ flex: 1, alignSelf: 'stretch' }}>
