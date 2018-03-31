@@ -142,7 +142,9 @@ export default class App extends Component {
     } else {
       return (
         <View style={styles.container}>
-          <Text style={styles.city}>Oh oh :( Data not loaded</Text>
+          <Text style={[styles.city, { color: 'black' }]}>
+            Oh oh :( Data not loaded
+          </Text>
         </View>
       );
     }
